@@ -1,9 +1,11 @@
 package com.kuluruvineeth.moviewatch.model
 
+import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
+@Entity(tableName = "movie_table")
 data class Movie(
     @SerializedName("vote_count")
     @Expose
